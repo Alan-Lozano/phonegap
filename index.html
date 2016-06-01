@@ -74,7 +74,7 @@
                 $.ajax({
                     method: "POST",
                     url: "http://192.168.1.1/QR/TestQR/qr.php?TipoEscaneo=2",
-                    data: { div: $("#results").html(), IdUsuario: $("#usuario").val()}
+                    data: { div: $("#results").html(), IdUsuario: $("#usuario").val(),TipoEscaneo: 2}
                 })
                 .done(function( msg ) {
                     $('#status').html(msg);
